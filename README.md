@@ -1,212 +1,128 @@
-| Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | Ⅵ | Ⅶ | Ⅷ | Ⅸ | Ⅹ |
+<!--| Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | Ⅵ | Ⅶ | Ⅷ | Ⅸ | Ⅹ |
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|
-| 算法[:pencil2:](#pencil2-算法) | 操作系统[:computer:](#computer-操作系统)|网络[:cloud:](#cloud-网络) | 面向对象[:couple:](#couple-面向对象) |数据库[:floppy_disk:](#floppy_disk-数据库)| Java [:coffee:](#coffee-java)| 系统设计[:bulb:](#bulb-系统设计)| 工具[:hammer:](#hammer-工具)| 编码实践[:speak_no_evil:](#speak_no_evil-编码实践)| 后记[:memo:](#memo-后记) |
+| 算法[:pencil2:](#pencil2-算法) | 操作系统[:computer:](#computer-操作系统)|网络[:cloud:](#cloud-网络) | 面向对象[:art:](#art-面向对象) |数据库[:floppy_disk:](#floppy_disk-数据库)| Java [:coffee:](#coffee-java)| 系统设计[:bulb:](#bulb-系统设计)| 工具[:wrench:](#wrench-工具)| 编码实践[:watermelon:](#watermelon-编码实践)| 后记[:memo:](#memo-后记) | -->
+
+| &nbsp;&nbsp;&nbsp;算法&nbsp;&nbsp;&nbsp; | 操作系统 | &nbsp;&nbsp;&nbsp;网络&nbsp;&nbsp;&nbsp; | 面向对象 | &nbsp;&nbsp;数据库&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp; | 系统设计 | &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; | 编码实践 | &nbsp;&nbsp;&nbsp;后记&nbsp;&nbsp;&nbsp; |
+| :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|
+| [:pencil2:](#pencil2-算法) | [:computer:](#computer-操作系统)|[:cloud:](#cloud-网络) | [:art:](#art-面向对象) |[:floppy_disk:](#floppy_disk-数据库)|  [:coffee:](#coffee-java)| [:bulb:](#bulb-系统设计)| [:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践)| [:memo:](#memo-后记) |
 
 <br>
 
 <div align="center">
-    <img src="other/LogoMakr_0zpEzN.png" width="150px">
+    <img src="assets/LogoMakr_0zpEzN.png" width="200px">
     <br>
-    <a href="https://cyc2018.github.io/CS-Notes"> <img src="https://img.shields.io/badge/>-read-4ab8a1.svg"></a>  <a href="other/Group.md"> <img src="https://img.shields.io/badge/_-group-4ab8a1.svg"></a> 
+    <a href="https://cyc2018.github.io/CS-Notes"> <img src="https://img.shields.io/badge/>-read-4ab8a1.svg"></a>  <a href="https://xiaozhuanlan.com/CyC2018"> <img src="https://img.shields.io/badge/_-more-4ab8a1.svg"></a> 
+    <br> <br>
+    本项目包含了技术面试必备的基础知识，内容浅显易懂，你不需要花很长的时间去阅读和理解成堆的技术书籍就可以快速掌握这些知识，从而节省宝贵的面试复习时间。推荐使用 https://cyc2018.github.io/CS-Notes 进行阅读，从而获得更好的阅读体验。你也可以订阅 <a href="https://xiaozhuanlan.com/CyC2018">面试进阶指南</a>，包含了学习指导和面试技巧，让你更轻松拿到满意的 Offer。<br/><br/>欢迎关注公众号“CyC2018”，每天发布一道高频基础知识面试题，让你在闲暇时间也能学习进步！公众号也提供了一个学习打卡圈子，记录你每天的学习收获，见证你的成长！<br/><br/><img src="assets/公众号1.jpg" width="200px">
+
 </div> 
 
-### :pencil2: 算法
+<br>
 
-- [剑指 Offer 题解](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/剑指%20offer%20题解.md)
+## :pencil2: 算法
 
-  目录根据原书第二版进行编排，代码和原书有所不同，尽量比原书更简洁。
+- [剑指 Offer 题解](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/剑指%20Offer%20题解%20-%20目录.md)
+- [Leetcode 题解](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Leetcode%20题解%20-%20目录.md)
+- [算法](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/算法%20-%20目录.md)
 
-- [Leetcode 题解](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Leetcode%20题解.md)
+## :computer: 操作系统
 
-  对题目做了一个大致分类，并对每种题型的解题思路做了总结。
-  
- - [算法](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/算法.md)
-
-   排序、并查集、栈和队列、红黑树、散列表。
-
-### :computer: 操作系统
-
-- [计算机操作系统](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/计算机操作系统.md)
-
-  进程管理、内存管理、设备管理、链接。
-
+- [计算机操作系统](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/计算机操作系统%20-%20目录.md)
 - [Linux](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Linux.md)
 
-  基本实现原理以及基本操作。
+## :cloud: 网络 
 
-### :cloud: 网络 
-
-- [计算机网络](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/计算机网络.md)
-
-  物理层、链路层、网络层、运输层、应用层。
-
+- [计算机网络](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/计算机网络%20-%20目录.md)
 - [HTTP](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/HTTP.md)
-
-  方法、状态码、Cookie、缓存、连接管理、HTTPs、HTTP 2.0。
-
 - [Socket](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Socket.md)
 
-  I/O 模型、I/O 多路复用。
-
-### :couple: 面向对象
+## :art: 面向对象
 
 - [设计模式](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/设计模式.md)
-
-  实现了 Gof 的 23 种设计模式。
-
 - [面向对象思想](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/面向对象思想.md)
 
-  三大原则（继承、封装、多态）、类图、设计原则。
-
-### :floppy_disk: 数据库 
+## :floppy_disk: 数据库 
 
 - [数据库系统原理](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/数据库系统原理.md)
-
-  事务、锁、隔离级别、MVCC、间隙锁、范式。
-
 - [SQL](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/SQL.md)
-
-  SQL 基本语法。
-
 - [Leetcode-Database 题解](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Leetcode-Database%20题解.md)
-
-  Leetcode 上数据库题目的解题记录。
-
 - [MySQL](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/MySQL.md)
-
-  存储引擎、索引、查询优化、切分、复制。
-
 - [Redis](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Redis.md)
 
-  五种数据类型、字典和跳跃表数据结构、使用场景、和 Memcache 的比较、淘汰策略、持久化、文件事件的 Reactor 模式、复制。
-
-### :coffee: Java
+## :coffee: Java
 
 - [Java 基础](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Java%20基础.md)
-
-  不会涉及很多基本语法介绍，主要是一些实现原理以及关键特性。
-
 - [Java 容器](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Java%20容器.md)
-
-  源码分析：ArrayList、Vector、CopyOnWriteArrayList、LinkedList、HashMap、ConcurrentHashMap、LinkedHashMap、WeakHashMap。
-
 - [Java 并发](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Java%20并发.md)
-
-  线程使用方式、两种互斥同步方法、线程协作、JUC、线程安全、内存模型、锁优化。
-
 - [Java 虚拟机](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Java%20虚拟机.md)
-
-  运行时数据区域、垃圾收集、类加载。
-
 - [Java I/O](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Java%20IO.md)
 
-  NIO 的原理以及实例。
-
-### :bulb: 系统设计 
+## :bulb: 系统设计 
 
 - [系统设计基础](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/系统设计基础.md)
-
-  性能、伸缩性、扩展性、可用性、安全性
-
 - [分布式](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/分布式.md)
-
-  分布式锁、分布式事务、CAP、BASE、Paxos、Raft
-
 - [集群](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/集群.md)
-
-  负载均衡、Session 管理
-
 - [攻击技术](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/攻击技术.md)
-
-  XSS、CSRF、SQL 注入、DDoS
-
 - [缓存](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/缓存.md)
-
-  缓存特征、缓存位置、缓存问题、数据分布、一致性哈希、LRU、CDN
-
 - [消息队列](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/消息队列.md)
 
-  消息处理模型、使用场景、可靠性
-
-### :hammer: 工具 
+## :wrench: 工具 
 
 - [Git](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Git.md)
-
-  一些 Git 的使用和概念。
-
 - [Docker](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Docker.md)
-
-  Docker 基本原理。
-  
-  - [构建工具](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/构建工具.md)
-
-  构建工具的基本概念、主流构建工具介绍。
-
+- [构建工具](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/构建工具.md)
 - [正则表达式](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/正则表达式.md)
 
-  正则表达式基本语法。
-
-### :speak_no_evil: 编码实践 
+## :watermelon: 编码实践 
 
 - [代码可读性](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/代码可读性.md)
-
-  参考 编写可读代码的艺术。
-
 - [代码风格规范](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/代码风格规范.md)
 
-  Google 开源项目的代码风格规范。
+## :memo: 后记 
 
-### :memo: 后记 
+### 内推信息
 
-#### About
+[Job-Recommend](https://github.com/CyC2018/Job-Recommend)
 
-本仓库主要是根据计算机经典书籍以及官方技术文档进行总结的学习笔记，希望对大家有所帮助。
+### QQ 群
 
-学习笔记不是从网上到处拼凑而来，除了少部分引用书上和技术文档的原文，其余都是笔者的原创。在您引用本仓库内容或者对内容进行修改演绎时，请遵循文末的开源协议，谢谢。
+为大家提供一个学习交流平台，在这里你可以自由地讨论技术问题。
 
-#### How To Contribute
+<img src="assets/group1.png" width="150px">
 
-笔记内容是笔者一个字一个字打上去的，难免会有一些笔误，如果发现笔误可直接对相应文档进行编辑修改。
+### 后端面试指南
 
-如果想要提交一个仓库现在还没有的全新内容，可以先将相应的文档放到 other 目录下。
+<a href="https://xiaozhuanlan.com/CyC2018">
+    <img src="assets/小专栏.jpg" width="80px">
+</a>
 
-欢迎在 Issue 中提交对本仓库的改进建议~
+### 排版
 
-#### BookList
+笔记内容按照 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版，以保证内容的可读性。
 
-本仓库参考的资料：[LEARNING.md](other/LEARNING.md)。
+不使用 `![]()` 这种方式来引用图片，而是用 `<img>` 标签。一方面是为了能够控制图片以合适的大小显示，另一方面是因为 [GFM](https://github.github.com/gfm/) 不支持 `<center> ![]() </center>` 这种方法让图片居中显示，只能使用 `<div align="center"> <img src=""/> </div>` 达到居中的效果。
 
-#### 2018 Summary
+在线排版工具：[Text-Typesetting](https://github.com/CyC2018/Text-Typesetting)。
 
-[2018 这一年.md](other/2018%20这一年.md)。
+### 上传方案
 
-#### Typesetting
+为了方便将本地笔记内容上传到 Github 上，实现了一整套自动化上传方案，包括提取图片、Markdown 文档转换、Git 同步。进行 Markdown 文档转换是因为 Github 使用的 GFM 不支持 MathJax 公式和 TOC 标记，所以需要替换 MathJax 公式为 CodeCogs 的云服务和重新生成 TOC 目录。
 
-笔记内容按照 [中文文案排版指北](https://mazhuang.org/wiki/chinese-copywriting-guidelines/) 进行排版，以保证内容的可读性。
+GFM 转换工具：[GFM-Converter](https://github.com/CyC2018/GFM-Converter)。
 
-笔记不使用 `![]()` 这种方式来引用图片，而是用 `<img>` 标签。一方面是为了能够控制图片以合适的大小显示，另一方面是因为 GFM 不支持 `<center> ![]() </center>` 让图片居中显示，只能使用 `<div align="center"> <img src=""/> </div>` 达到居中的效果。
+### License
 
-笔者将自己实现的文档排版功能提取出来，放在 Github Page 中，无需下载安装即可免费使用：[Text-Typesetting](https://github.com/CyC2018/Markdown-Typesetting)。
+本仓库内容将网上的资料随意拼凑而来，除了少部分引用书上和技术文档的原文，其余都是我的原创。在您引用本仓库内容或者对内容进行修改演绎时，请署名并以相同方式共享，谢谢。
 
-#### Uploading
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
-笔者在本地使用为知笔记软件进行书写，为了方便将本地笔记内容上传到 Github 上，实现了一整套自动化上传方案，包括文本文件的导出、提取图片、Markdown 文档转换、Git 同步。
-
-进行 Markdown 文档转换是因为 Github 使用的 GFM 不支持 MathJax 公式和 TOC 标记，所以需要替换 MathJax 公式为 CodeCogs 的云服务和重新生成 TOC 目录。
-
-笔者将自己实现文档转换功能提取出来，方便大家在需要将本地 Markdown 上传到 Github，或者制作项目 README 文档时生成目录时使用：[GFM-Converter](https://github.com/CyC2018/GFM-Converter)。
-
-#### Logo
+### Logo
 
 Power by [logomakr](https://logomakr.com/).
 
-#### Statement
+### 致谢
 
-本仓库不参与商业行为，不向读者收取任何费用。(This repository is not engaging in business activities, and does not charge readers any fee.)
-
-#### Acknowledgements
-
-感谢以下人员对本仓库做出的贡献，当然不仅仅只有这些贡献者，这里就不一一列举了。如果你希望被添加到这个名单中，并且提交过 Issue 或者 PR，请与笔者联系。
+感谢以下人员对本仓库做出的贡献，当然不仅仅只有这些贡献者，这里就不一一列举了。如果你希望被添加到这个名单中，并且提交过 Issue 或者 PR，请与我联系。
 
 <a href="https://github.com/linw7">
 ​    <img src="https://avatars3.githubusercontent.com/u/21679154?s=400&v=4" width="50px">
@@ -235,11 +151,4 @@ Power by [logomakr](https://logomakr.com/).
 <a href="https://github.com/yanglbme">
 ​    <img src="https://avatars1.githubusercontent.com/u/21008209?s=400&v=4" width="50px">
 </a>
-
-
-#### License
-
-在对本作品进行演绎时，请署名并以相同方式共享。
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 

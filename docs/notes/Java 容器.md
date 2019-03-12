@@ -14,7 +14,6 @@
     * [ConcurrentHashMap](#concurrenthashmap)
     * [LinkedHashMap](#linkedhashmap)
     * [WeakHashMap](#weakhashmap)
-* [附录](#附录)
 * [参考资料](#参考资料)
 <!-- GFM-TOC -->
 
@@ -25,7 +24,8 @@
 
 ## Collection
 
-<div align="center"> <img src="pics/VP6n3i8W48Ptde8NQ9_0eSR5eOD6uqx.png"/> </div><br>
+<div align="center"> <img src="pics/6_2001550476096035.png"/> </div><br>
+
 
 ### 1. Set
 
@@ -51,7 +51,7 @@
 
 ## Map
 
-<div align="center"> <img src="pics/SoWkIImgAStDuUBAp2j9BKfBJ4vLy4q.png"/> </div><br>
+<div align="center"> <img src="pics/2_2001550426232419.png"/> </div><br>
 
 - TreeMap：基于红黑树实现。
 
@@ -66,7 +66,7 @@
 
 ## 迭代器模式
 
-<div align="center"> <img src="pics/SoWkIImgAStDuUBAp2j9BKfBJ4vLy0G.png"/> </div><br>
+<div align="center"> <img src="pics/91aa7c29-438f-4fcc-8c63-2a75899139de.png"/> </div><br>
 
 Collection 继承了 Iterable 接口，其中的 iterator() 方法能够产生一个 Iterator 对象，通过这个对象就可以迭代遍历 Collection 中的元素。
 
@@ -111,6 +111,7 @@ List list = Arrays.asList(1, 2, 3);
 
 ## ArrayList
 
+
 ### 1. 概览
 
 实现了 RandomAccess 接口，因此支持随机访问。这是理所当然的，因为 ArrayList 是基于数组实现的。
@@ -125,6 +126,9 @@ public class ArrayList<E> extends AbstractList<E>
 ```java
 private static final int DEFAULT_CAPACITY = 10;
 ```
+
+<div align="center"> <img src="pics/7935be3d-c2b3-4213-90c9-1e68ec4ac4e7.png"/> </div><br>
+
 
 ### 2. 扩容
 
@@ -387,7 +391,7 @@ transient Node<E> first;
 transient Node<E> last;
 ```
 
-<div align="center"> <img src="pics/49495c95-52e5-4c9a-b27b-92cf235ff5ec.png" width="500"/> </div><br>
+<div align="center"> <img src="pics/09184175-9bf2-40ff-8a68-3b467c77216a.png"/> </div><br>
 
 ### 2. 与 ArrayList 的比较
 
@@ -409,7 +413,7 @@ transient Entry[] table;
 
 Entry 存储着键值对。它包含了四个字段，从 next 字段我们可以看出 Entry 是一个链表。即数组中的每个位置被当成一个桶，一个桶存放一个链表。HashMap 使用拉链法来解决冲突，同一个链表中存放哈希值相同的 Entry。
 
-<div align="center"> <img src="pics/8fe838e3-ef77-4f63-bf45-417b6bc5c6bb.png" width="600"/> </div><br>
+<div align="center"> <img src="pics/1d2719d5-8d60-4c9b-a4ad-b2df7c7615af.jpg"/> </div><br>
 
 ```java
 static class Entry<K,V> implements Map.Entry<K,V> {
@@ -485,7 +489,7 @@ map.put("K3", "V3");
 - 计算键值对所在的桶；
 - 在链表上顺序查找，时间复杂度显然和链表的长度成正比。
 
-<div align="center"> <img src="pics/49d6de7b-0d0d-425c-9e49-a1559dc23b10.png" width="600"/> </div><br>
+<div align="center"> <img src="pics/cf779e26-0382-4495-8463-f1e19e2e38a0.jpg"/> </div><br>
 
 ### 3. put 操作
 
@@ -821,7 +825,7 @@ final Segment<K,V>[] segments;
 static final int DEFAULT_CONCURRENCY_LEVEL = 16;
 ```
 
-<div align="center"> <img src="pics/3fdfc89d-719e-4d93-b518-29fa612b3b18.png"/> </div><br>
+<div align="center"> <img src="pics/deb18bdb-b3b3-4660-b778-b0823a48db12.jpg"/> </div><br>
 
 ### 2. size 操作
 
@@ -1092,90 +1096,6 @@ public final class ConcurrentCache<K, V> {
 }
 ```
 
-# 附录
-
-Collection 绘图源码：
-
-```
-@startuml
-
-interface Collection
-interface Set
-interface List
-interface Queue
-interface SortSet
-
-class HashSet
-class LinkedHashSet
-class TreeSet
-class ArrayList
-class Vector
-class LinkedList
-class PriorityQueue
-
-
-Collection <|-- Set
-Collection <|-- List
-Collection <|-- Queue
-Set <|-- SortSet
-
-Set <|.. HashSet
-Set <|.. LinkedHashSet
-SortSet <|.. TreeSet
-List <|.. ArrayList
-List <|.. Vector
-List <|.. LinkedList
-Queue <|.. LinkedList
-Queue <|.. PriorityQueue
-
-@enduml
-```
-
-Map 绘图源码
-
-```
-@startuml
-
-interface Map
-interface SortMap
-
-class HashTable
-class LinkedHashMap
-class HashMap
-class TreeMap
-
-Map <|.. HashTable
-Map <|.. LinkedHashMap
-Map <|.. HashMap
-Map <|-- SortMap
-SortMap <|.. TreeMap
-
-@enduml
-```
-
-迭代器类图
-
-```
-@startuml
-
-interface Iterable
-interface Collection
-interface List
-interface Set
-interface Queue
-interface Iterator
-interface ListIterator
-
-Iterable <|-- Collection
-Collection <|.. List
-Collection <|.. Set
-Collection <|-- Queue
-Iterator <-- Iterable
-Iterator <|.. ListIterator
-ListIterator <-- List
-
-@enduml
-```
 
 # 参考资料
 
@@ -1191,3 +1111,9 @@ ListIterator <-- List
 - [Java 集合细节（二）：asList 的缺陷](http://wiki.jikexueyuan.com/project/java-enhancement/java-thirtysix.html)
 - [Java Collection Framework – The LinkedList Class](http://javaconceptoftheday.com/java-collection-framework-linkedlist-class/)
 
+
+
+
+
+</br><div align="center">欢迎关注公众号，获取最新文章！</div></br></br>
+<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>

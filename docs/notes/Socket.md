@@ -36,11 +36,11 @@ Unix 有五种 I/O 模型：
 
 ## 阻塞式 I/O
 
-应用进程被阻塞，直到数据复制到应用进程缓冲区中才返回。
+应用进程被阻塞，直到数据从内核缓冲区复制到应用进程缓冲区中才返回。
 
-应该注意到，在阻塞的过程中，其它程序还可以执行，因此阻塞不意味着整个操作系统都被阻塞。因为其他程序还可以执行，所以不消耗 CPU 时间，这种模型的 CPU 利用率效率会比较高。
+应该注意到，在阻塞的过程中，其它应用进程还可以执行，因此阻塞不意味着整个操作系统都被阻塞。因为其它应用进程还可以执行，所以不消耗 CPU 时间，这种模型的 CPU 利用率效率会比较高。
 
-下图中，recvfrom 用于接收 Socket 传来的数据，并复制到应用进程的缓冲区 buf 中。这里把 recvfrom() 当成系统调用。
+下图中，recvfrom() 用于接收 Socket 传来的数据，并复制到应用进程的缓冲区 buf 中。这里把 recvfrom() 当成系统调用。
 
 ```c
 ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen);
@@ -52,7 +52,7 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 应用进程执行系统调用之后，内核返回一个错误码。应用进程可以继续执行，但是需要不断的执行系统调用来获知 I/O 是否完成，这种方式称为轮询（polling）。
 
-由于 CPU 要处理更多的系统调用，因此这种模型的 CPU 利用率是比较低的。
+由于 CPU 要处理更多的系统调用，因此这种模型的 CPU 利用率比较低。
 
 <div align="center"> <img src="pics/1492929000361_5.png"/> </div><br>
 
@@ -321,3 +321,9 @@ poll 没有最大描述符数量的限制，如果平台支持并且对实时性
 - [poll vs select vs event-based](https://daniel.haxx.se/docs/poll-vs-select.html)
 - [select / poll / epoll: practical difference for system architects](http://www.ulduzsoft.com/2014/01/select-poll-epoll-practical-difference-for-system-architects/)
 - [Browse the source code of userspace/glibc/sysdeps/unix/sysv/linux/ online](https://code.woboq.org/userspace/glibc/sysdeps/unix/sysv/linux/)
+
+
+
+
+</br><div align="center">欢迎关注公众号，获取最新文章！</div></br></br>
+<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
